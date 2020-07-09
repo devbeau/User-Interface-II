@@ -28,10 +28,14 @@ time, mark, audio, video {
 /*Universal Styling */
 
 @keyframes encircle {
-    0%   {border-radius: 0%;}
-    25%  {border-radius: 33%;}
-    50%  {border-radius: 66%;}
-    100% {border-radius: 100%;}
+    0%   {border-radius: 0%;
+    border-color: rebeccapurple;}
+    25%  {border-radius: 33%;
+        border-color: darkorange;}
+    50%  {border-radius: 66%;
+        border-color: forestgreen;}
+    100% {border-radius: 100%;
+        border-color: blue;}
   }
 
 html{
@@ -142,6 +146,7 @@ h2{
     border: 3px solid lavender;
     animation-name: encircle;
     animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 #project-wrapper p{
     text-align: center;
@@ -168,12 +173,14 @@ h3{
 #favicon-wrapper{
     display:flex;
     justify-content: space-between;
+    align-items: center;
 }
 #favicon-wrapper a{
-    width:25%;
+    
+    width:1%;
 }
 #favicon-wrapper a img{
-    
+    padding:5%;
     width: 45px;
     height: 45px;
 }
