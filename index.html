@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./style/index.css">
 </head>
 <body>
+    <div id="container"> 
     <header>
         <div id="header-wrapper">
             <h1>Beau Bradley</h1>
@@ -18,15 +19,15 @@
             </nav>
         </div>      
     </header>
-    <section>
+    <section id ="main-section">
         <div id="main-wrapper">
             <div id="main-img">
                 <img src="https://picsum.photos/350/240"/>
             </div>
             <div id="main-txt">
                 <h2>Beau Bradley</h2>
-                <button>My Projects</button>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec dolor eu leo faucibus laoreet vitae ut augue.</p>
+                <a href="./projects.html" class="linkbutton">My Projects</a>
+                <p>I am about to finish my first week at Lambda School, and look forward to learning all of the things I need to become a developer. Here are a few of the projects from future me!</p>
             </div>
         </div>
     </section>
@@ -69,8 +70,21 @@
     <footer>
         <div id="footer-wrapper">
         <h3>Like what you see?</h3>
-        <button>Contact Me</button>
+        <a href="contact.html" class="linkbutton">Contact Me</a>
+            <div id="favicon-wrapper">
+                <a href="https://www.facebook.com/profile">
+                    <img src="assets/fbicon.png">
+                </a>
+                <a href="https://www.linkin.com/profile">
+                    <img src="assets/linkedinicon.png">
+                </a>
+                <a href="https://www.twitter.com/profile">
+                    <img src="assets/twittericon.png">
+                </a>
+            </div>
         </div>
+
     </footer>
+</div>
 </body>
 </html>

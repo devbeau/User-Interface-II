@@ -20,18 +20,55 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 1px solid lightgrey;
+	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
 }
+/*Universal Styling */
 
-/* Header Styling */
+@keyframes encircle {
+    0%   {border-radius: 0%;}
+    25%  {border-radius: 33%;}
+    50%  {border-radius: 66%;}
+    100% {border-radius: 100%;}
+  }
+
 html{
     background-color: rgb(247, 221, 199);
 }
+
+.linkbutton {
+    display:block;
+    background: coral;
+    border-radius: 10%;
+    text-decoration: none;
+    color: white;
+    width: 20%;
+    padding: 1.2%;
+    margin: 1.2% 0;
+    text-align: center;
+    
+
+}
+/* Container Styling */
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:80%;
+    justify-content: center;
+    margin: 0 10%;
+}
+
+/* Header Styling */
+
+header{
+    align-self: stretch;
+}
 #header-wrapper{
-    background-color: rgb(169, 208, 231); 
+    background-color:  rgb(213, 220, 224); 
 }
 
 h1 {
@@ -39,8 +76,9 @@ h1 {
 }
 #header-nav {
     display:flex;
+    flex-grow: 4;
     justify-content: left;
-    background-color: rgb(169, 208, 231);
+    background-color: rgb(213, 220, 224);
 }
 #header-nav a{
     background-color: rgb(243, 179, 154);
@@ -56,20 +94,28 @@ h1 {
 }
 
 /* Body Styling */
+#main-section{
+    width: 100%;
+}
 
 #main-wrapper{
     display:flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     background-color: rgb(247, 221, 199);
     align-items: center;
+    width:100%;
 }
 #main-img{
+    width:100%;
 }
 #main-txt{
+    justify-self: flex-end;
+    align-self: stretch;
     display:flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-evenly;
+   
+    width:100%;
 
 }
 h2{
@@ -81,17 +127,29 @@ h2{
 }
 #main-txt p{
     font-size: 1.2em;
-    text-align:center;
+    text-align:left;
     width: 35%;
 }
 
 #project-wrapper{
     display:flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
     background-color: rgb(247, 221, 199);
+}
+#project-wrapper img:hover{
+    border: 3px solid lavender;
+    animation-name: encircle;
+    animation-duration: 1s;
 }
 #project-wrapper p{
     text-align: center;
+}
+/* Footer Styling */
+
+footer{
+    align-self: stretch;
 }
 
 #footer-wrapper{
@@ -99,11 +157,23 @@ h2{
     flex-direction:column;
     justify-content:center;
     align-items: center;
-    background-color: rgb(169, 208, 231);
+    background-color:  rgb(213, 220, 224);
 }
 h3{
     font-size: 1.3em;
 }
 #footer-wrapper button{
     font-size:1.2em;
+}
+#favicon-wrapper{
+    display:flex;
+    justify-content: space-between;
+}
+#favicon-wrapper a{
+    width:25%;
+}
+#favicon-wrapper a img{
+    
+    width: 45px;
+    height: 45px;
 }
