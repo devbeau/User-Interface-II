@@ -1,1 +1,109 @@
 /* Add CSS styling here */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 1px solid lightgrey;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* Header Styling */
+html{
+    background-color: rgb(247, 221, 199);
+}
+#header-wrapper{
+    background-color: rgb(169, 208, 231); 
+}
+
+h1 {
+    font-size:3.2em;
+}
+#header-nav {
+    display:flex;
+    justify-content: left;
+    background-color: rgb(169, 208, 231);
+}
+#header-nav a{
+    background-color: rgb(243, 179, 154);
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding: 1% 4%;
+
+}
+#header-nav .nav-one{
+    margin-left: 1.5%;
+    background-color: coral;
+}
+
+/* Body Styling */
+
+#main-wrapper{
+    display:flex;
+    justify-content: flex-start;
+    background-color: rgb(247, 221, 199);
+    align-items: center;
+}
+#main-img{
+}
+#main-txt{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+h2{
+    font-size: 2.4em;;
+}
+#main-txt button{
+    font-size: 1.2em;
+    width: 20%;
+}
+#main-txt p{
+    font-size: 1.2em;
+    text-align:center;
+    width: 35%;
+}
+
+#project-wrapper{
+    display:flex;
+    flex-wrap: wrap;
+    background-color: rgb(247, 221, 199);
+}
+#project-wrapper p{
+    text-align: center;
+}
+
+#footer-wrapper{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    background-color: rgb(169, 208, 231);
+}
+h3{
+    font-size: 1.3em;
+}
+#footer-wrapper button{
+    font-size:1.2em;
+}
