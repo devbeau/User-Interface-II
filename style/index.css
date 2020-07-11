@@ -39,12 +39,12 @@ time, mark, audio, video {
   }
 
 html{
-    background-color: rgb(247, 221, 199);
+    background-color: #7137c8ff;
 }
 
 .linkbutton {
     display:block;
-    background: coral;
+    background: rgb(177, 124, 212);
     border-radius: 10%;
     text-decoration: none;
     color: white;
@@ -52,49 +52,83 @@ html{
     padding: 1.2%;
     margin: 1.2% 0;
     text-align: center;
+    font-size: 1.8em;
     
 
 }
 /* Container Styling */
 
 #container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width:80%;
+    margin: 1% 15% ;
+    min-width: 800px;
+    max-width: 1600px;
     justify-content: center;
-    margin: 0 10%;
 }
 
 /* Header Styling */
 
 header{
-    align-self: stretch;
+
 }
+
 #header-wrapper{
-    background-color:  rgb(213, 220, 224); 
+    background-color:  rgb(247, 255, 245);
+    display:flex;
+    flex-direction: column; 
+    padding-left:2%;
+    
+    border-radius: 15px 15px 0 0;
+}
+#logo-title{
+    display:flex;
+}
+
+#logo{
+    margin: 1% 0%;
+    width:7%;
+    height: auto;
+    border-radius:15px;
 }
 
 h1 {
-    font-size:3.2em;
+    align-self: center;
+    font-size:4.2em;
+    text-align: right;
+    width: 90%;
+    height: 10%;
+    color:#7137c8ff;
+    font-weight: bold;
 }
 #header-nav {
     display:flex;
     flex-grow: 4;
     justify-content: left;
-    background-color: rgb(213, 220, 224);
+    background-color: rgb(247, 255, 245);
 }
+
 #header-nav a{
-    background-color: rgb(243, 179, 154);
+    background-color: rgb(177, 124, 212);
     text-decoration: none;
     text-align: center;
     color: white;
-    padding: 1% 4%;
+    padding: 1% 0%;
+    width: 24%;
+    font-size:1.3em;
 
 }
+
+#header-nav a:hover{
+    transition: 150ms;
+    background-color: #7137c8ff;
+}
 #header-nav .nav-one{
-    margin-left: 1.5%;
-    background-color: coral;
+    border-radius:20px 0 0 0;
+    background-color: #7137c8ff;
+}
+
+#header-nav .nav-four{
+    border-radius:0 20px 0 0;
+
 }
 
 /* Body Styling */
@@ -105,34 +139,39 @@ h1 {
 #main-wrapper{
     display:flex;
     justify-content: space-between;
-    background-color: rgb(247, 221, 199);
+    background-color: white;
     align-items: center;
     width:100%;
 }
-#main-img{
-    width:100%;
+#main-wrapper img{
+    margin: 0.5% 2%;
+    min-height: 220px;
+    max-height: 440px;
+    width:95%;
+    height: auto;
 }
 #main-txt{
-    justify-self: flex-end;
-    align-self: stretch;
+    margin: 1.5%;
+    align-items: center;
     display:flex;
     flex-direction: column;
-    justify-content: space-evenly;
-   
-    width:100%;
+    justify-content: space-between;
+    background:rgb(240, 227, 207);
+    border: 2px solid #7137c8ff;
+    border-radius: 30px;
+    width:80%;
+    padding: 0.5%;
 
 }
 h2{
-    font-size: 2.4em;;
+    font-size: 3.0em;;
 }
-#main-txt button{
-    font-size: 1.2em;
-    width: 20%;
-}
+
 #main-txt p{
-    font-size: 1.2em;
-    text-align:left;
-    width: 35%;
+    font-size: 1.8em;
+    width: 60%;
+    text-align: center;
+    margin-bottom: 2%;
 }
 
 #project-wrapper{
@@ -140,7 +179,7 @@ h2{
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    background-color: rgb(247, 221, 199);
+    background-color: rgb(247, 255, 245);;
 }
 #project-wrapper img:hover{
     border: 3px solid lavender;
@@ -162,7 +201,7 @@ footer{
     flex-direction:column;
     justify-content:center;
     align-items: center;
-    background-color:  rgb(213, 220, 224);
+    background-color:  rgb(247, 255, 245);
 }
 h3{
     font-size: 1.3em;
