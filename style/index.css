@@ -1,1 +1,343 @@
 /* Add CSS styling here */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/*Universal Styling */
+
+@keyframes encircle {
+    0%   {border-radius: 0%;
+    border-color: rebeccapurple;}
+    25%  {border-radius: 33%;
+        border-color: darkorange;}
+    50%  {border-radius: 66%;
+        border-color: forestgreen;}
+    100% {border-radius: 100%;
+        border-color: blue;}
+  }
+
+html{
+    background-color: #7137c8ff;
+    font-size: 62.5%;
+}
+body{
+    font-size:1.6rem;
+    border-radius: 0px 0px 15px 15px;
+    box-sizing: border-box;
+}
+
+.linkbutton {
+    display:block;
+    background: #7137c8ff;
+    border-radius: 10%;
+    text-decoration: none;
+    color: white;
+    width: 30%;
+    padding: 1.2%;
+    margin: 1.2% 0;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.linkbutton:hover{
+    transform: scale(1.05);
+    background: rgb(123, 74, 197);
+}
+/* Container Styling */
+
+#container{
+    margin: 0% 1% 10% 10%;
+    width:80%;
+    justify-content: center;
+    background-color:  rgb(247, 255, 245);
+    border-radius: 0 0 25px 25px;
+}
+
+/* Header Styling */
+
+#header-wrapper{
+    display:flex;
+    flex-direction: column; 
+    padding-left:2%;
+    width:100%;
+    border-radius: 15px 15px 0 0;
+}
+#logo-title{
+    display:flex;
+}
+
+#logo{
+    margin: 1% 0%;
+    width:7%;
+    height: auto;
+    border-radius:15px;
+}
+
+h1 {
+    align-self: center;
+    font-size: 5.2rem;
+    text-align: right;
+    width: 90%;
+    height: 10%;
+    color: #7137c8ff;
+    font-weight: bold;
+}
+#header-nav {
+    display:flex;
+    flex-grow: 4;
+    justify-content: left;
+}
+
+#header-nav a{
+    background-color: rgb(177, 124, 212);
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding: 1% 0%;
+    width: 24%;
+    font-size:1.6rem;
+
+}
+
+#header-nav a:hover{
+    transition: 150ms;
+    background-color: #7137c8ff;
+}
+#header-nav .nav-one{
+    border-radius:20px 0 0 0;
+    background-color: #7137c8ff;
+}
+#header-nav .nav-one:hover{
+    background-color:  rgb(177, 124, 212);
+}
+
+#header-nav .nav-four{
+    border-radius:0 20px 0 0;
+
+}
+
+/* Body Styling */
+#main-section{
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+#main-wrapper{
+    display:flex;
+    justify-content: space-between;
+    background-color: rgb(247, 255, 245);
+    align-items: center;
+    width:100%;
+}
+#main-wrapper img{
+    margin: 0.5% 2%;
+    min-height: 220px;
+    max-height: 440px;
+    width:95%;
+    height: auto;
+}
+#main-txt{
+    margin: 1.5%;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background:white;
+    border: 2px solid #7137c8ff;
+    border-radius: 30px;
+    width:80%;
+    max-height: 30%;
+    padding: 0.5%;
+    box-shadow: 0 4px 8px 0 rgba(72, 15, 109, 0.38), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
+
+}
+h2{
+    font-size: 3.6rem;
+}
+
+#main-txt p{
+    font-size: 2.4rem;
+    width: 60%;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+#project-wrapper{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 2%;
+    padding: 1% 1%;
+}
+/*#project-wrapper img:hover{
+    border: 3px solid lavender;
+    animation-name: encircle;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}*/
+#project-wrapper p{
+    text-align: center;
+    font-weight: bold;
+}
+/* Footer Styling */
+
+footer{
+    background-color: #7137c8ff;
+    align-self: stretch;
+    border-radius: 0px 0px 25px 25px;
+    font-size: 1.8rem;
+    color:white;
+    
+    
+}
+
+#footer-wrapper{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    background-color:  rgb(177, 124, 212);
+    border-radius: 0px 0px 25px 25px;
+    padding-top: 2%;
+    
+}
+h3{
+    font-size: 1.3
+    em;
+}
+
+#favicon-wrapper{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+}
+
+
+@media (max-width: 800px){
+
+#logo-title object{
+    width: 10%;
+}
+h1{
+    text-align: left;
+    margin-left: 5%;
+}
+h2{
+    font-size:3.2rem;
+}
+#main-txt{
+    size:50%;
+}
+#main-txt p {
+    font-size:1.8rem;
+    padding: 1% 0%;
+}
+#main-wrapper img{
+    width: 50%;
+}
+
+#project-wrapper{
+    margin: 0 0.5%;
+}
+#project-wrapper img{
+    margin: 0.25%;
+}
+
+.linkbutton{
+    font-size: 2.0rem;
+}
+}
+
+@media (max-width: 500px){
+    #logo-title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #logo-title object{
+        width: 20%;
+    }
+    h1{
+        margin: 2%;
+        padding: 0;
+        text-align:center;
+    }
+    #header-nav{
+        flex-direction:column;
+        align-items: center;
+        margin-bottom: 2%;
+    }
+    #header-nav a{
+        padding:2% 1%;
+        font-size: 2.0rem;
+    }
+
+    #header-nav .nav-one{
+        border-radius: 20px 20px 0px 0px;
+    }
+    #header-nav .nav-four{
+        border-radius: 0px 0px 20px 20px;
+    }
+
+    #main-wrapper{
+        flex-direction: column;
+        margin-bottom: 2%;
+    }
+
+    #main-wrapper img{
+        width: 80%;
+        margin: 3% 0;
+    }
+
+    #project-wrapper{
+        width:100%;
+    }
+    #project-wrapper div{
+        width:50%;
+        margin: 2% 0;
+        padding: 0;
+    }
+    #project-wrapper div img{
+        width:90%;
+    }
+    #footer-wrapper {
+        margin: 5% 0;
+        padding-bottom: 5%;
+    }
+    footer h3{
+        margin-bottom: 3%;
+        font-size: 2.4rem;
+    }
+    footer a{
+        margin-bottom: 3%;
+    }
+    #favicon-wrapper {
+        margin-top: 3%;
+        justify-content: space-between;
+        width: 60%;
+    }
+}
